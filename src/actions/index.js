@@ -1,6 +1,7 @@
 export const INCREMENT = 'INCREMENT'; // action type
 export const DECREMENT = 'DECREMENT';
 export const INCREMENT_IF_ODD = 'INCREMENT_IF_ODD';
+export const WAIT_TO_INCREMENT = 'WAIT_TO_INCREMENT';
 
 // Our action creators will return
 // an action packet that our reducer will
@@ -33,5 +34,11 @@ export const decrement = () => {
 export const incrementIfOdd = () => {
     return {
       type: INCREMENT_IF_ODD,
+    }
+}
+
+export const waitToIncrement = () => {
+    return {
+      type: WAIT_TO_INCREMENT,
     }
 }
